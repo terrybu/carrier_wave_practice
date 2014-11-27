@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @startup.name %>
+</p>
+
+<p>
+  <strong>Industry:</strong>
+  <%= @startup.industry %>
+</p>
+
+<p>
+  <%= image_tag @startup.image_url(:thumb).to_s %>
+</p>
+
+<%= link_to 'Edit', edit_startup_path(@startup) %> |
+<%= link_to 'Back', startups_path %>
